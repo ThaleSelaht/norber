@@ -1,0 +1,45 @@
+<form name="formNorber" ng-submit="submitForm()" novalidate>
+    <div class="modal-header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12"><h3 class="h-form">FALE COM A NORBER</h3></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-body">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12"><input ng-model="formData.nome" ng-required="true" type="text" placeholder="Nome*" class="form-control"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6"><input ng-model="formData.fone" ng-required="true" type="text" placeholder="Telefone*" class="form-control"></div>
+                <div class="col-lg-6"><input ng-model="formData.email" ng-required="true" type="text" placeholder="Email*" class="form-control"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12"><input ng-model="formData.empresa" type="text" placeholder="Empresa" class="form-control"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <select class="form-control" name="assunto" ng-required="true" ng-model="formData.funcionarios">
+                        <option value="" disabled>Nº de Func.*</option>
+                        <option value="0-500">0-500</option>
+                        <option value="501-1000">501-1000</option>
+                        <option value="Acima de 1000">Acima de 1000</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12"><textarea ng-model="formData.mensagem" placeholder="Mensagem" rows="6" class="form-control"></textarea></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-5 clearfix"><span class="pull-left">*Campos obrigatórios</span></div>
+                
+                <div class="col-lg-4 col-lg-offset-3 clearfix"><input ng-disabled="formNorber.$invalid" class="btn bt-norber bt-form pull-right" value="ENVIAR" type="submit"></div>
+            </div>
+        </div>
+    </div>
+</form>

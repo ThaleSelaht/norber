@@ -20,12 +20,13 @@
 		<div class="row">
 			<div class="col-lg-12">
 				<pre>Banner</pre>
+				
 			</div>
 		</div>
 	</div><!--***** FIM Banner *****-->
 
 	<!--***** INÍCIO New Ponto *****-->
-	<div class="container-fluid new-ponto-wrapper bg-color-wrapper">
+	<div class="container-fluid new-ponto-wrapper" id="new-ponto">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-6">
@@ -42,15 +43,17 @@
 				<p class="txt-main">Integrado às mais renomadas empresas de REP (Registro Eletrônico de Ponto) e Folhas de pagamento e adequado à legislação brasileira e a portaria 1510 do MTE.</p>
 				<img src="app/img/int_new_ponto.png" alt="Integração New Ponto" class="img-integracao img-responsive center-block">
 			</div>
-			<div class="col-lg-6">
+			<div class="col-lg-6 bg-line">
 				<img class="img-responsive" src="app/img/pic_01.png" alt="New Ponto">
+
+				
+				<button class="bt-norber center-block" ng-click="open()"><strong>FALE COM A NORBER!</strong></button>
 			</div>
 		</div>
 	</div>
 	</div><!--***** FIM New Ponto *****-->
-
 	<!--***** INÍCIO New Mobile *****-->
-	<div class="container-fluid new-mobile-wrapper">
+	<div class="container-fluid new-mobile-wrapper" id="new-mobile">
 	<div class="container">
 		<div class="row">
 			
@@ -67,8 +70,9 @@
 			<p class="txt-main">Tecnologias:<br>Android, iOS e Windows Phone</p>
 			<img src="app/img/int_new_mobile.png" alt="Integração New Mobile" class="img-integracao img-responsive center-block">
 			</div>
-			<div class="col-lg-6">
+			<div class="col-lg-6 bg-line">
 				<img class="img-responsive" src="app/img/pic_02.png" alt="New Mobile">
+				<button class="bt-norber center-block" ng-click="open()"><strong>FALE COM A NORBER!</strong></button>
 			</div>
 			
 		</div>
@@ -76,11 +80,12 @@
 	</div><!--***** FIM New Mobile *****-->
 
 	<!--***** INÍCIO New Soluções Header *****-->
-	<div class="container-fluid new-solucoes-h-wrapper">
+	<div class="container-fluid new-solucoes-h-wrapper" id="new-solucoes">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
 				<img class="img-responsive" src="app/img/new_solucoes.jpg" alt="New Soluções">
+
 			</div>
 		</div>
 	</div>
@@ -102,7 +107,7 @@
       <div class="carousel-inner">
           
         <div class="item active">
-        	<div class="container-fluid new-web-wrapper">
+        	<div class="container-fluid new-web-wrapper bg-cover">
 			  <div class="container">
         	  <div class="row">
 				<div class="col-lg-6">
@@ -120,8 +125,9 @@
 				<img src="app/img/int_new_web.png" alt="Integração New Web" class="img-integracao img-responsive center-block">
 				</div>
 
-				<div class="col-lg-6">
+				<div class="col-lg-6 bg-line">
 					<img class="img-responsive" src="app/img/pic_03.png" alt="New Web">
+					<button class="bt-norber center-block" ng-click="open()"><strong>FALE COM A NORBER!</strong></button>
 				</div>
 			</div><!--.row-->
 			</div>
@@ -129,7 +135,7 @@
         </div><!--.item-->
          
         <div class="item">
-        	<div class="container-fluid new-mail-wrapper">
+        	<div class="container-fluid new-mail-wrapper bg-cover">
 			  <div class="container">
         	  <div class="row">
 				<div class="col-lg-6">
@@ -165,8 +171,9 @@
 				<img src="app/img/int_new_mail.png" alt="Integração New Mail" class="img-integracao img-responsive center-block">
 				</div>
 
-				<div class="col-lg-6">
+				<div class="col-lg-6 bg-line">
 					<img class="img-responsive" src="app/img/pic_04.png" alt="New Mail">
+					<button class="bt-norber center-block" ng-click="open()"><strong>FALE COM A NORBER!</strong></button>
 				</div>
 			</div><!--.row-->
 			</div>
@@ -174,13 +181,14 @@
         </div><!--.item-->
          
         <div class="item">
-        	<div class="container-fluid new-rep-wrapper">
+        	<div class="container-fluid new-rep-wrapper bg-cover">
 			  <div class="container">
         	  <div class="row">
 				<div class="col-lg-6">
 				<div class="h-main">
 				<img class="img-responsive" src="app/img/new_rep.png" alt="New Rep">
 				</div>
+				<div class="txt-wrapper"><!-- TXT-WRAPPER -->
 				<header>
 					<h3 class="h-secundario">Módulo de Integração com o REP – Registrador Eletrônico de Ponto</h3>
 				</header>
@@ -194,11 +202,13 @@
 					<li>Envio de dados dos colaboradores e recebimento de marcações</li>
 					<li>Monitoramento de equipamentos</li>
 				</ul>
+				</div><!-- TXT-WRAPPER -->
 				<img src="app/img/int_new_rep.png" alt="Integração New Rep" class="img-integracao img-responsive center-block">
 				</div>
 
-				<div class="col-lg-6">
+				<div class="col-lg-6 bg-line">
 					<img class="img-responsive" src="app/img/pic_05.png" alt="New Rep">
+					<button class="bt-norber center-block" ng-click="open()"><strong>FALE COM A NORBER!</strong></button>
 				</div>
 			</div><!--.row-->
 			</div>
@@ -206,24 +216,26 @@
         </div><!--.item--> 
 
         <div class="item">
-        	<div class="container-fluid new-connect-wrapper">
+        	<div class="container-fluid new-connect-wrapper bg-cover">
 			  <div class="container">
         	  <div class="row">
 				<div class="col-lg-6">
 				<div class="h-main">
 				<img class="img-responsive" src="app/img/new_connect.png" alt="New Connect">
 				</div>
+				<div class="txt-wrapper"><!-- TXT-WRAPPER -->
 				<header>
 					<h3 class="h-secundario">Módulo de Integração do Ponto Eletrônico com Folhas de Pagamento</h3>
 				</header>
 				<p class="txt-main">O <span class="txt-destaque">NewConnect</span> integra as informações de controle de frequência com a folha Folha de Pagamento. Todos os eventos do ponto, como horas trabalhadas, horas extras, dentre outros, são enviados automaticamente para a folha de pagamento, assim como as admissões e movimentações (afastamentos, férias e rescisões) são enviados ao sistema de tratamento de ponto, com segurança e rapidez.</p>
 				<p class="txt-main">Com o <span class="txt-destaque">NewConnect</span> também é possível integrar outras informações de diversos sistemas, como: acesso, BI, financeiro, contábil, etc.</p>
-								
+				</div><!-- TXT-WRAPPER -->			
 				<img src="app/img/int_new_connect.png" alt="Integração New Connect" class="img-integracao img-responsive center-block">
 				</div>
 
-				<div class="col-lg-6">
+				<div class="col-lg-6 bg-line">
 					<img class="img-responsive" src="app/img/pic_06.png" alt="New Connect">
+					<button class="bt-norber center-block" ng-click="open()"><strong>FALE COM A NORBER!</strong></button>
 				</div>
 			</div><!--.row-->
 			</div>
@@ -231,75 +243,82 @@
         </div><!--.item--> 
 
         <div class="item">
-        	<div class="container-fluid new-rest-wrapper">
+        	<div class="container-fluid new-rest-wrapper bg-cover">
 			  <div class="container">
         	  <div class="row">
 				<div class="col-lg-6">
 				<div class="h-main">
 				<img class="img-responsive" src="app/img/new_rest.png" alt="New Rest">
 				</div>
+				<div class="txt-wrapper"><!-- TXT-WRAPPER -->
 				<header>
 					<h3 class="h-secundario">Módulo de Controle de Refeições</h3>
 				</header>
 				<p class="txt-main">Com o <span class="txt-destaque">NewRest</span> é possível controlar o número de refeições e enviar diretamente para a Folha de Pagamento.</p>
 				<p class="txt-main">Um produto alinhado com as necessidades do mercado corporativo e que permite o gerenciamento eficaz de registros das refeições de colaboradores, prestadores de serviços e terceiros. Também disponibiliza relatórios e informações diversas para a elaboração de planilhas e gráficos. </p>
-								
+				</div><!-- TXT-WRAPPER -->		
 				<img src="app/img/int_new_rest.png" alt="Integração New Rest" class="img-integracao img-responsive center-block">
 				</div>
 
-				<div class="col-lg-6">
+				<div class="col-lg-6 bg-line">
 					<img class="img-responsive" src="app/img/pic_07.png" alt="New Rest">
+					<button class="bt-norber center-block" ng-click="open()"><strong>FALE COM A NORBER!</strong></button>
 				</div>
+
 			</div><!--.row-->
 			</div>
 			</div><!--.container-fluid -->
         </div><!--.item-->  
 
         <div class="item">
-        	<div class="container-fluid new-acesso-wrapper">
+        	<div class="container-fluid new-acesso-wrapper bg-cover">
 			  <div class="container">
         	  <div class="row">
 				<div class="col-lg-6">
 				<div class="h-main">
 				<img class="img-responsive" src="app/img/new_acesso.png" alt="New Acesso">
 				</div>
+				<div class="txt-wrapper"><!-- TXT-WRAPPER -->
 				<header>
 					<h3 class="h-secundario">Módulo de Controle de Acesso</h3>
 				</header>
 				<p class="txt-main">Totalmente Integrado ao <span class="txt-destaque">NewPonto</span>, agrega e incorpora as necessidades cada vez maiores das empresas por soluções customizáveis para gerenciamento de acesso a portarias, portas, torniquetes, estacionamento e refeitórios.</p>
 				<p class="txt-main">Com flexibilidade para bloqueios,  liberações e mensageria, além da possibilidade de integração com diversas soluções e softwares da Empresa. As ocorrências podem ser enviadas por meio de mensagens para as áreas competentes, oferecendo total gestão do fluxo de pessoas nas áreas gerenciadas, diminuindo possíveis contenciosos trabalhistas. </p>
 				<p class="txt-main">Uma ferramenta web viabilizando o gerenciamento e acesso de qualquer lugar.</p>
-								
+				</div><!-- TXT-WRAPPER -->				
 				<img src="app/img/int_new_acesso.png" alt="Integração New Acesso" class="img-integracao img-responsive center-block">
 				</div>
 
-				<div class="col-lg-6">
+				<div class="col-lg-6 bg-line">
 					<img class="img-responsive" src="app/img/pic_08.png" alt="New Acesso">
+					<button class="bt-norber center-block" ng-click="open()"><strong>FALE COM A NORBER!</strong></button>
 				</div>
 			</div><!--.row-->
 			</div>
 			</div><!--.container-fluid -->
         </div><!--.item-->   
         <div class="item">
-        	<div class="container-fluid new-express-wrapper">
+        	<div class="container-fluid new-express-wrapper bg-cover">
 			  <div class="container">
         	  <div class="row">
 				<div class="col-lg-6">
 				<div class="h-main">
 				<img class="img-responsive" src="app/img/new_express.png" alt="New Express">
 				</div>
+				<div class="txt-wrapper"><!-- TXT-WRAPPER -->
 				<header>
 					<h3 class="h-secundario">Módulo de Controle de Acesso</h3>
 				</header>
 				<p class="txt-main">O <span class="txt-destaque">NewExpress</span> é um software para empresas com baixa complexidade na administração de controle de frequência e que necessitam cumprir as normas da portaria 1510/09.</p>
 				<p class="txt-main">Com o <span class="txt-destaque">NewExpress</span> o usuário consegue visualizar, em uma única tela, todas as marcações realizadas diretamente no cartão de ponto: faltas, atrasos, opções de abono, horas extras e mudanças de horários.</p>
 				<p class="txt-main">Comercializado juntamente com algumas marcas e modelos de REP do mercado.</p>
-								
+				</div><!-- TXT-WRAPPER -->			
 				<img src="app/img/int_new_express.png" alt="Integração New Express" class="img-integracao img-responsive center-block">
 				</div>
 
-				<div class="col-lg-6">
+				<div class="col-lg-6 bg-line">
 					<img class="img-responsive" src="app/img/pic_09.png" alt="New Express">
+					<button class="bt-norber center-block" ng-click="open()"><strong>FALE COM A NORBER!</strong></button>
 				</div>
 			</div><!--.row-->
 			</div>
@@ -314,7 +333,7 @@
 	<!--***** FIM New Soluções *****-->
 
 	<!--***** INÍCIO Norber Tec *****-->
-	<div class="container">
+	<div class="container" id="empresa">
 		<div class="row">
 			<div class="col-lg-12">
 				<h1 class="h-tec text-center">
@@ -359,7 +378,7 @@
 	</div><!--***** FIM Norber Tec *****-->
 
 	<!--***** INÍCIO Clientes *****-->
-	<div class="container-fluid bg-color-wrapper">
+	<div class="container-fluid bg-color-wrapper clientes-wrapper" id="clientes">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
@@ -400,12 +419,19 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
-				<pre>Rodapé</pre>
+				<ul class="nav-footer text-center">
+					<li><a scroll-on-click href="#new-ponto">NEW PONTO</a></li>
+					<li><a scroll-on-click href="#new-solucoes">NEW SOLUÇÕES</a></li>
+					<li><a scroll-on-click href="#new-mobile">NEW MOBILE</a></li>			
+					<li><a scroll-on-click href="#empresa">EMPRESA</a></li>
+					<li><a scroll-on-click href="#clientes">CLIENTES</a></li>
+					<li><a href="" ng-click="open()">CONTATO</a></li>
+				</ul>
 			</div>
 		</div>
 	</div>
 	</div><!--***** FIM Rodapé *****-->
-
+	
 	<!--***** CSS *****-->
 	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">

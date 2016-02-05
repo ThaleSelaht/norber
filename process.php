@@ -5,29 +5,29 @@ $data = array(); // array to pass back data
   // if there are no errors, return a message
   $data['messageSuccess'] = 'Hey! Obrigado por entrar em contato. Retornaremos a mensagem em breve.';
   // CHANGE THE TWO LINES BELOW
-  $email_to = "contato@thumb.com.br";
-  $email_subject = "Formulário de contato site Thumb";
+  $email_to = "comercial@norber.com.br";
+  $email_subject = "Formulário de contato site Norber";
   $nome = $_POST['nome']; // required
   $email_from = $_POST['email']; // required
   $fone = $_POST['fone']; // required
-  if(isset($_POST['assunto'])){
-    $assunto = $_POST['assunto']; 
+  if(isset($_POST['empresa'])){
+    $empresa = $_POST['empresa']; 
   }else{
-    $assunto = "";
+    $empresa = "";
   }
-
-  if(isset($_POST['descricao'])){
-    $descricao = $_POST['descricao']; 
+  if(isset($_POST['mensagem'])){
+    $mensagem = $_POST['mensagem']; 
   }else{
-    $descricao = "";
+    $mensagem = "";
   }
 
   $email_message = "Detalhes do Formulário:"."\n";
   $email_message .= "Nome: ".$nome."\n";
   $email_message .= "Email: ".$email_from."\n";
   $email_message .= "Telefone: ".$fone."\n";
-  $email_message .= "Assunto: ".$assunto."\n";
-  $email_message .= "Descrição: ".$descricao."\n";
+  $email_message .= "Empresa: ".$empresa."\n";
+  $email_message .= "Quantidade de funcionários: ".$funcionarios."\n";
+  $email_message .= "Mensagem: ".$mensagem."\n";
   $headers = 'From: '.$email_from."\n".
   'Reply-To: '.$email_from."\n" .
   'X-Mailer: PHP/' . phpversion();

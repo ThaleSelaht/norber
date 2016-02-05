@@ -48,7 +48,7 @@ body{
 ----------------------------------------------------------------------------------*/
 .new-ponto-wrapper{
     border-top: #F28B2E solid 10px;
-    background: url('../img/bg_new_ponto.jpg') right no-repeat, 
+    background: url('../img/bg_new_ponto.jpg') right no-repeat,
                 #EFEEEE;
 }
 
@@ -64,21 +64,25 @@ body{
 }
 
 .new-web-wrapper{
-    background: url('../img/bg_new_web.jpg') right no-repeat, 
-                #EFEEEE;   
+    background: url('../img/bg_new_web.jpg') no-repeat, 
+                #EFEEEE; 
+    background-position: right -200px top;  
 }
 .new-mail-wrapper{
-    background: url('../img/bg_new_mail.jpg') right no-repeat, 
+    background: url('../img/bg_new_mail.jpg') no-repeat, 
                 #EFEEEE;   
+    background-position: right -250px top;
 }
 .new-rep-wrapper{
-    background: url('../img/bg_new_rep.jpg') right no-repeat, 
+    background: url('../img/bg_new_rep.jpg') no-repeat, 
                 #EFEEEE;   
+    background-position: right -120px center;
 }
 
 .new-connect-wrapper{
     background: url('../img/bg_new_connect.jpg') right no-repeat, 
-                #EFEEEE;   
+                #EFEEEE;  
+    background-position: right -200px top; 
 }
 
 .new-rest-wrapper{
@@ -88,22 +92,42 @@ body{
 
 .new-acesso-wrapper{
     background: url('../img/bg_new_acesso.jpg') right no-repeat, 
-                #EFEEEE;   
+                #EFEEEE; 
+    background-position: right -300px top;   
 }
 
 .new-express-wrapper{
     background: url('../img/bg_new_express.jpg') right no-repeat, 
-                #EFEEEE;   
+                #EFEEEE;  
+    background-position: right -280px top; 
 }
 
+.new-web-wrapper, .new-mail-wrapper, .new-rep-wrapper, .new-connect-wrapper, .new-rest-wrapper, .new-acesso-wrapper, .new-express-wrapper{
+    min-height: 688px;
+}
 .txt-wrapper{
-    height: 360px;
+    height: 310px;
 }
-
+.clientes-wrapper{
+    padding-bottom: 50px;
+}
 .rodape-wrapper{
     background: #525050;
 }
 
+/*--------------------------------------------------------------------------------- 
+                        BGS
+----------------------------------------------------------------------------------*/
+.bg-cover{
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.bg-line{
+    background: url('../img/bg_line.png') repeat-y center; 
+}
 /*--------------------------------------------------------------------------------- 
                         HEADERS
 ----------------------------------------------------------------------------------*/
@@ -120,8 +144,8 @@ body{
 .h-tec{
     font-size: 24px;
     font-family: 'open_sansitalic', Verdana, Arial;
-    padding-bottom: 40px;
-    margin: 100px 0 60px 0;
+    padding-bottom: 20px;
+    margin: 50px 0;
     color: #525050;
     border-bottom: #525050 1px solid;
 }
@@ -133,6 +157,12 @@ body{
     color: #525050;
 }
 
+.h-form{
+    margin: 0;
+    font-size: 32px;
+    color: #FFF;
+    font-family: 'open_sansregular', Verdana, Arial;
+}
 /*--------------------------------------------------------------------------------- 
                         TEXT
 ----------------------------------------------------------------------------------*/
@@ -163,6 +193,28 @@ body{
 .img-integracao{
     margin-top: 50px;
     padding-bottom: 50px;
+}
+
+/*--------------------------------------------------------------------------------- 
+                        BUTTONS
+----------------------------------------------------------------------------------*/
+.bt-norber{
+    margin-top: 180px;
+    display: block;
+    color: #FFF;
+    background: #ED8038;
+    font-family: 'open_sansregular';
+    padding: 6px 8px;
+    border-radius: 25px 25px 25px 25px;
+    border:none;
+}
+.bt-form{
+    padding: 5px 30px;
+    margin: 0;
+}
+
+.bt-form:focus, .bt-norber:focus{
+    border: none;
 }
 /*--------------------------------------------------------------------------------- 
                         CAROUSEL
@@ -201,6 +253,69 @@ body{
 }
 .carousel-indicators .active {
     background: #002342;
+}
+/*--------------------------------------------------------------------------------- 
+                        FOOTER
+----------------------------------------------------------------------------------*/
+.nav-footer {
+    font-family: 'open_sansitalic', Verdana, Arial;
+    padding: 20px 0;
+    margin: 0px;
+}
+
+.nav-footer li {
+    color: #EAEAEA;
+    margin: 0;
+    display: inline;
+}
+
+.nav-footer li a{
+    text-decoration: none;
+    color: #EAEAEA;
+    padding: 0 10px;
+}
+.nav-footer > li:nth-child(-1n+5)::after{
+    content: "/";
+}
+/*--------------------------------------------------------------------------------- 
+                        MODAL FORM
+----------------------------------------------------------------------------------*/
+
+.modal-content{
+    border: 15px solid #FFF;
+    border-radius: 0;
+}
+.modal-header{
+    background: #f0812e;
+    border: none;
+}
+
+.modal-body{
+    background: #d8d6d6;
+    color: #777E83;
+    font-family: 'open_sansitalic', Verdana, Arial;
+}
+
+.modal-footer{
+    border: none;
+    background: #d8d6d6;
+    color: #777E83;
+    font-family: 'open_sansitalic', Verdana, Arial;
+}
+
+.modal-body input,select,textarea{
+    margin: 0 0 5px 0;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border:none;
+}
+textarea{
+    resize: none;
+}
+.modal-textarea{
+    width: 100%;
+    height: 140px;
 }
 /*--------------------------------------------------------------------------------- 
                         OVERIDES
