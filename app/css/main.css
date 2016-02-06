@@ -108,11 +108,19 @@ body{
 .txt-wrapper{
     height: 310px;
 }
-.clientes-wrapper{
+
+.clientes-wrapper, .empresa-wrapper{
     padding-bottom: 50px;
 }
 .rodape-wrapper{
     background: #525050;
+}
+
+.img-wrapper{
+    margin-top: 12px;
+    display: block;
+    width: 251px;
+    height: 76px;
 }
 
 /*--------------------------------------------------------------------------------- 
@@ -126,7 +134,7 @@ body{
 }
 
 .bg-line{
-    background: url('../img/bg_line.png') repeat-y center; 
+    background: url('../img/bg_line.gif') repeat-y center; 
 }
 /*--------------------------------------------------------------------------------- 
                         HEADERS
@@ -177,6 +185,10 @@ body{
 
 .txt-quote{
     margin: 40px 0 100px 0;
+}
+
+.txt-timeline{
+    margin-top: 15px;
 }
 
 /*--------------------------------------------------------------------------------- 
