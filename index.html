@@ -14,7 +14,6 @@
 	<!-- Não esquecer google analytics -->
 </head>
 <body ng-controller="angularUiCtrls">
-	
 	<!--***** INÍCIO Banner *****-->
 	<div class="container">
 		<div class="row">
@@ -95,7 +94,7 @@
 	
 		
 		<!-- carousel-example-generic -->
-	<div id="Carousel2" class="carousel slide" data-interval="false">
+	<div id="produtos" class="carousel slide" data-interval="false">
                
       <!-- <ol class="carousel-indicators">
           <li data-target="#Carousel" data-slide-to="0" class="active"></li>
@@ -326,8 +325,8 @@
         </div><!--.item-->  
       </div><!--.carousel-inner-->
     
-      <a data-slide="prev" href="#Carousel2" class="left carousel-control hidden-xs">‹</a>
-      <a data-slide="next" href="#Carousel2" class="right carousel-control hidden-xs">›</a>
+      <a data-slide="prev" href="#produtos" class="left carousel-control hidden-xs">‹</a>
+      <a data-slide="next" href="#produtos" class="right carousel-control hidden-xs">›</a>
     </div>
 	<!-- FIM carousel-example-generic -->
 	<!--***** FIM New Soluções *****-->
@@ -430,7 +429,55 @@
 		</div>
 	</div>
 	</div><!--***** FIM Clientes *****-->
-
+	
+	<!-- <div class="container">
+		<div class="btn-group row">
+	        <label class="btn btn-primary col-sm-1" uib-btn-checkbox>1988</label>
+	        <label class="btn btn-primary col-sm-1" uib-btn-checkbox>1994</label>
+	        <label class="btn btn-primary col-sm-1" uib-btn-checkbox>1997</label>
+	        <label class="btn btn-primary col-sm-1" uib-btn-checkbox>1998</label>
+	        <label class="btn btn-primary col-sm-1" uib-btn-checkbox>1999</label>
+	        <label class="btn btn-primary col-sm-1" uib-btn-checkbox>2000</label>
+	        <label class="btn btn-primary col-sm-1" uib-btn-checkbox>2005</label>
+	        <label class="btn btn-primary col-sm-1" uib-btn-checkbox>2010</label>
+	        <label class="btn btn-primary col-sm-1" uib-btn-checkbox>2011</label>
+	        <label class="btn btn-primary col-sm-1" uib-btn-checkbox>2012</label>
+	        <label class="btn btn-primary col-sm-1" uib-btn-checkbox>2013</label>
+	        <label class="btn btn-primary col-sm-1" uib-btn-checkbox>2015</label>
+	    </div>
+	</div> -->
+	<div ng-controller="ButtonsCtrl">
+    <h4>Single toggle</h4>
+    <pre>{{singleModel}}</pre>
+    <button type="button" class="btn btn-primary" ng-model="singleModel" uib-btn-checkbox btn-checkbox-true="1" btn-checkbox-false="0">
+        Single Toggle
+    </button>
+    <h4>Checkbox</h4>
+    <pre>Model: {{checkModel}}</pre>
+    <pre>Results: {{checkResults}}</pre>
+    <div class="btn-group">
+        <label class="btn btn-primary" ng-model="checkModel.left" uib-btn-checkbox>Left</label>
+        <label class="btn btn-primary" ng-model="checkModel.middle" uib-btn-checkbox>Middle</label>
+        <label class="btn btn-primary" ng-model="checkModel.right" uib-btn-checkbox>Right</label>
+    </div>
+    <h4>Radio &amp; Uncheckable Radio</h4>
+    <pre>{{radioModel || 'null'}}</pre>
+    <div class="btn-group">
+        <label class="btn btn-primary" ng-model="radioModel" uib-btn-radio="'Left'">Left</label>
+        <label class="btn btn-primary" ng-model="radioModel" uib-btn-radio="'Middle'">Middle</label>
+        <label class="btn btn-primary" ng-model="radioModel" uib-btn-radio="'Right'">Right</label>
+    </div>
+    <div class="btn-group">
+        <label class="btn btn-success" ng-model="radioModel" uib-btn-radio="'Left'" uncheckable>Left</label>
+        <label class="btn btn-success" ng-model="radioModel" uib-btn-radio="'Middle'" uncheckable>Middle</label>
+        <label class="btn btn-success" ng-model="radioModel" uib-btn-radio="'Right'" uib-uncheckable="uncheckable">Right</label>
+    </div>
+    <div>
+        <button class="btn btn-default" ng-click="uncheckable = !uncheckable">
+            Toggle uncheckable
+        </button>
+    </div>
+</div>
 	<!--***** INÍCIO Rodapé *****-->
 	<div class="container-fluid rodape-wrapper">
 	<div class="container">
@@ -458,9 +505,6 @@
 	<script src="bower_components/angular/angular.min.js"></script>
 	<script src="bower_components/angular-route/angular-route.min.js"></script>
 	<script src="bower_components/angular-animate/angular-animate.min.js"></script>
-	<script src="bower_components/angular-strap/dist/angular-strap.min.js"></script>
-	<script src="bower_components/angular-strap/dist/angular-strap.tpl.min.js">
-	</script>
 	<script src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
 	<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
 	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>

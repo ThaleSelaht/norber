@@ -1,11 +1,9 @@
 'use strict';
 
 var angularUiApp = angular.module('angularUiApp', 
-	['ngAnimate','mgcrea.ngStrap', 'ngRoute','ngLocale', 'ui.bootstrap']);
-	angularUiApp.config(function($modalProvider) {
-	    angular.extend($modalProvider.defaults, {
-	    	html: true
-	    });
+	['ngAnimate', 'ngRoute','ngLocale', 'ui.bootstrap']);
+	angularUiApp.config(function($locationProvider) {
+	    $locationProvider.html5Mode(true);
 	});
 	
 	angularUiApp.directive('scrollOnClick', function() {
@@ -26,10 +24,54 @@ var angularUiApp = angular.module('angularUiApp',
 	  }
 	});
 	
-	angularUiApp.controller('angularUiCtrls', function($scope, $uibModal, $log, $http){	
+	angularUiApp.controller('angularUiCtrls', function($scope, $uibModal, $log, $http, $location){	
 		$scope.items = ['item1', 'item2', 'item3'];
 
 		$scope.animationsEnabled = true;
+
+		$scope.varteste = $location.search().produto;
+
+		if($scope.varteste == "new-web"){
+			$('#produtos').carousel(0);
+		} else if ($scope.varteste == "new-mail"){
+			$('#produtos').carousel(1);
+		} else if ($scope.varteste == "new-rep"){
+			$('#produtos').carousel(2);
+		} else if ($scope.varteste == "new-connect"){
+			$('#produtos').carousel(3);
+		} else if ($scope.varteste == "new-rest"){
+			$('#produtos').carousel(4);
+		} else if ($scope.varteste == "new-rest"){
+			$('#produtos').carousel(5);
+		} else if ($scope.varteste == "new-express"){
+			$('#produtos').carousel(6);
+		}
+
+		/*switch($scope.varteste) {
+		    case 0:
+		        $('#produtos').carousel(0);
+		        break;
+		    case 1:
+		        $('#produtos').carousel(1);
+		        break;
+		    case 2:
+		        $('#produtos').carousel(2);
+		        break;
+		    case 3:
+		        $('#produtos').carousel(3);
+		        break;
+		    case 4:
+		        $('#produtos').carousel(4);
+		        break;
+		    case 5:
+		        $('#produtos').carousel(5);
+		        break;
+		    case 6:
+		        $('#produtos').carousel(6);
+		        break;
+		    default:
+		        break;
+		}*/
 
 	  $scope.open = function (size) {
 
@@ -88,3 +130,26 @@ angularUiApp.controller('ModalInstanceCtrl', function ($scope, $uibModalInstance
 		    });
 	};
 });	
+
+angularUiApp.controller('ButtonsCtrl', function ($scope) {
+  $scope.singleModel = 1;
+
+  $scope.radioModel = 'Middle';
+
+  $scope.checkModel = {
+    left: false,
+    middle: true,
+    right: false
+  };
+
+  $scope.checkResults = [];
+
+  $scope.$watchCollection('checkModel', function () {
+    $scope.checkResults = [];
+    angular.forEach($scope.checkModel, function (value, key) {
+      if (value) {
+        $scope.checkResults.push(key);
+      }
+    });
+  });
+});
