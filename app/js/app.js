@@ -47,32 +47,6 @@ var angularUiApp = angular.module('angularUiApp',
 			$('#produtos').carousel(6);
 		}
 
-		/*switch($scope.varteste) {
-		    case 0:
-		        $('#produtos').carousel(0);
-		        break;
-		    case 1:
-		        $('#produtos').carousel(1);
-		        break;
-		    case 2:
-		        $('#produtos').carousel(2);
-		        break;
-		    case 3:
-		        $('#produtos').carousel(3);
-		        break;
-		    case 4:
-		        $('#produtos').carousel(4);
-		        break;
-		    case 5:
-		        $('#produtos').carousel(5);
-		        break;
-		    case 6:
-		        $('#produtos').carousel(6);
-		        break;
-		    default:
-		        break;
-		}*/
-
 	  $scope.open = function (size) {
 
 	    var modalInstance = $uibModal.open({
@@ -130,26 +104,3 @@ angularUiApp.controller('ModalInstanceCtrl', function ($scope, $uibModalInstance
 		    });
 	};
 });	
-
-angularUiApp.controller('ButtonsCtrl', function ($scope) {
-  $scope.singleModel = 1;
-
-  $scope.radioModel = 'Middle';
-
-  $scope.checkModel = {
-    left: false,
-    middle: true,
-    right: false
-  };
-
-  $scope.checkResults = [];
-
-  $scope.$watchCollection('checkModel', function () {
-    $scope.checkResults = [];
-    angular.forEach($scope.checkModel, function (value, key) {
-      if (value) {
-        $scope.checkResults.push(key);
-      }
-    });
-  });
-});

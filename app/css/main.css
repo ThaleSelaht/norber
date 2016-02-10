@@ -123,6 +123,31 @@ body{
     height: 76px;
 }
 
+.saiba-mais-box{
+    cursor: pointer;
+    width: 100%;
+    height: 160px;
+    font-family: 'open_sansitalic', Verdana, Arial;
+    color: #FFF;
+    padding: 10px 20px;
+    margin: 0 0 40px 0;
+}
+.saiba-mais-box > h1{
+    font-size: 24px;
+    margin: 0;
+}
+
+.new-ponto-box{
+    background-image: url('../img/bloco-laranja.jpg');
+}
+
+.new-solucoes-box{
+    background-image: url('../img/bloco-cinza.jpg');
+}
+
+.new-mobile-box{
+    background-image: url('../img/bloco-azul.jpg');
+}
 /*--------------------------------------------------------------------------------- 
                         BGS
 ----------------------------------------------------------------------------------*/
@@ -334,6 +359,25 @@ textarea{
 ----------------------------------------------------------------------------------*/
 .btn-group{
     width: 100%;
+    margin-bottom: 50px;
+}
+.btn-primary{
+    background-color: #f47300;
+    border-color: #af5402;
+}
+.btn-primary.active, .btn-primary:active, .open>.dropdown-toggle.btn-primary, .btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .btn-primary:hover{
+    color: #fff;
+    background-color: #af5402;
+    border-color: #af5402;
+}
+.btn-primary.active:hover{
+    color: #af5402;
+    background-color: #FFF;
+    border-color: #af5402;
+}
+.btn-primary:focus{
+    margin-left: -1px;
+    border: none;
 }
 /*--------------------------------------------------------------------------------- 
                         Helpers
